@@ -1,6 +1,6 @@
 # Opted not to go down the command line route, though this could just as easily be done using 'sys'
 
-max = int(input("Enter the maximum number. "))  # Maximum number plus one, strictly speaking
+maxi = int(input("Enter the maximum number. "))  # Maximum number plus one, strictly speaking
 print("There are rules for the following numbers: 3, 5, 7, 11, 13, 17.")
 
 rules = []
@@ -10,7 +10,7 @@ while num != "/":
     if num != "/":
         rules.append(int(num))
 
-for i in range(1, max):
+for i in range(1, maxi):
     string = ""
 
     if i % 3 == 0 and 3 in rules:
