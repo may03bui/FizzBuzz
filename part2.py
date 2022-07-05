@@ -8,8 +8,12 @@ def main():
 
         rules = []
         num = -1
+
         while num != "/" and num != "0":
             num = input("Enter a number for that rule to be applied. / to exit; 0 to add all. """)
+            # I kept the input in string form and only cast it to an int later (line 17) to avoid
+            # having to handle type exceptions, though this could easily be changed to take that
+            # approach too!
             if num == "0":
                 rules = [3, 5, 7, 11, 13, 17]
             elif num in ("3", "5", "7", "11", "13", "17"):
