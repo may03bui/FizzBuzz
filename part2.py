@@ -1,5 +1,3 @@
-# Opted not to go down the command line route, though this could just as easily be done using 'sys'
-
 def main():
 
     def define_rules():
