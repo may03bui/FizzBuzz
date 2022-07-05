@@ -12,7 +12,7 @@ def main():
             num = input("Enter a number for that rule to be applied. / to exit; 0 to add all. """)
             if num == "0":
                 rules = [3, 5, 7, 11, 13, 17]
-            elif num not in ("3", "5", "7", "11", "13", "17"):
+            elif num in ("3", "5", "7", "11", "13", "17"):
                 rules.append(int(num))
             elif num != "/":
                 print("Not a valid input.\n")
