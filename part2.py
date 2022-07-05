@@ -8,7 +8,7 @@ def main():
 
         rules = []
         num = -1
-        while num != "/":
+        while num != "/" and num != "0":
             num = input("Enter a number for that rule to be applied. / to exit; 0 to add all. """)
             if num == "0":
                 rules = [3, 5, 7, 11, 13, 17]
